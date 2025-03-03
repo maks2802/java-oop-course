@@ -1,3 +1,5 @@
+package Lab1.task6;
+
 import java.util.Scanner;
 
 public class Task6 {

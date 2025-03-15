@@ -13,9 +13,9 @@ public class Task7 {
         System.out.print("Введіть максимальне число: ");
         int max = scanner.nextInt();
 
-        int randomNum = random.nextInt(max - min) + min;
+        int randomNum = random.nextInt(min, max);
 
-        String text = randomNum % 2 == 0 ? "є парним" : "є непарним";
+        String text = randomNum % 2 == 0 ? "парним" : "непарним";
 
         System.out.printf("Згенероване число: %d\nЧисло: %d є %s\n", randomNum, randomNum, text);
 

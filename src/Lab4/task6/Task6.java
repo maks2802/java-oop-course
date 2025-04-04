@@ -1,7 +1,5 @@
 package Lab4.task6;
 
-import java.util.Scanner;
-
 public class Task6 {
     static void printNumber() {
         int num = 10;

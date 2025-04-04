@@ -1,4 +1,4 @@
-package Lab6.Task1;
+package Lab6.task1;
 
 public class Person {
     String name;

@@ -1,4 +1,4 @@
-package Lab6.Task3;
+package Lab6.task3;
 
 public class Animal {
     String name;

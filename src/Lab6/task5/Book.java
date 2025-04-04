@@ -1,4 +1,4 @@
-package Lab6.Task5;
+package Lab6.task5;
 
 public class Book {
     private String title;

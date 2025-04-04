@@ -1,4 +1,4 @@
-package Lab6.Task2;
+package Lab6.task2;
 
 public class Car {
     String mark;

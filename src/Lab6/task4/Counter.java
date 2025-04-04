@@ -1,4 +1,4 @@
-package Lab6.Task4;
+package Lab6.task4;
 
 public class Counter {
     int count;

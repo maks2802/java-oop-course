@@ -8,10 +8,10 @@ public class Main {
         clock1.setMinutes(59);
         clock1.setSeconds(58);
 
-        clock1.displayTime(); // 23:59:58
+        clock1.displayTime();
 
         clock1.tick();
-        clock1.displayTime(); // 23:59:59
+        clock1.displayTime();
 
         clock1.tick();
         clock1.displayTime();

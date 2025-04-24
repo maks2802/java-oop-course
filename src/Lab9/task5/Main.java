@@ -1,18 +1,31 @@
 package Lab9.task5;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        EmailNotification emailNotification = new EmailNotification();
-        SMSNotification smsNotification = new SMSNotification();
-        PushNotification pushNotification = new PushNotification();
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter email notification: ");
+        String emailMessage = scanner.nextLine();
+
+        System.out.print("Enter SMS notification: ");
+        String smsMessage = scanner.nextLine();
+
+        System.out.print("Enter push notification: ");
+        String pushMessage = scanner.nextLine();
+
+        System.out.println();
 
         Notification[] notifications = new Notification[3];
-        notifications[0] = emailNotification;
-        notifications[1] = smsNotification;
-        notifications[2] = pushNotification;
+        notifications[0] = new EmailNotification(emailMessage);
+        notifications[1] = new SMSNotification(smsMessage);
+        notifications[2] = new PushNotification(pushMessage);
 
         for (Notification notification : notifications) {
-            notification.send("Hello, user!");
+            notification.send();
         }
+
+        scanner.close();
     }
 }

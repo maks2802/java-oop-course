@@ -18,6 +18,8 @@ public class TaskManagerApp {
             System.out.println("5. Exit");
 
             int choice = scanner.nextInt();
+            scanner.nextLine();
+
             switch (choice) {
                 case 1:
                     if (tasks.isEmpty()) {

@@ -8,7 +8,7 @@ public class SMSNotification extends Notification {
 
     @Override
     public void send() {
-        NotificationReader.addMessage(this.message);
+        Storage.addMessage(this.message);
         System.out.println("Sending SMS: " + this.message);
     }
 }

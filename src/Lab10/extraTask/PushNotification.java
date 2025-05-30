@@ -8,7 +8,7 @@ public class PushNotification extends Notification {
 
     @Override
     public void send() {
-        NotificationReader.addMessage(this.message);
+        Storage.addMessage(this.message);
         System.out.println("Sending push notification: " + this.message);
     }
 }
